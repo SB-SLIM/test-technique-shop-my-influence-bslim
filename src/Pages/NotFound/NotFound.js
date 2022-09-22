@@ -1,8 +1,5 @@
-// import { Link as RouterLink } from "react-router-dom";
-// import { Link as MUILink, Typography } from "@mui/material";
-import { Link as MUILink, Typography } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
-
+import { Typography } from "@mui/material";
+import { MuiRouterLink } from "ui-components";
 import "./notFound.css";
 
 function NotFound() {
@@ -14,15 +11,7 @@ function NotFound() {
         The page you are looking for does not exist. How you got here is a
         mystery. But you can click the button below to go back to the
       </Typography>
-
-      <MUILink
-        variant="button"
-        component={RouterLink}
-        to="/dashboard"
-        underline="hover"
-      >
-        customers page
-      </MUILink>
+      <MuiRouterLink to="/">Dashboard page</MuiRouterLink>
     </div>
   );
 }

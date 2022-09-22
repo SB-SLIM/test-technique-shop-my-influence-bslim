@@ -1,0 +1,10 @@
+.iconPrimary{
+   
+}
+
+.iconRounded{
+    @apply rounded-full;
+}
+.iconSquare{
+    @apply rounded-sm;
+}
