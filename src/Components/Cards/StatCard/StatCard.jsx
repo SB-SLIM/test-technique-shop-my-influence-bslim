@@ -1,6 +1,7 @@
 import { Card, Typography } from "@mui/material";
 import React from "react";
 import { Icon } from "ui-components";
+import { capitalizeFirstLetter } from "utils/capitalizeFirstLetter";
 
 function StatCard({ iconVariant, color, data: { value, subtitle } }) {
   return (
@@ -14,7 +15,7 @@ function StatCard({ iconVariant, color, data: { value, subtitle } }) {
       <Typography variant="h6">
         <strong>{value}</strong>
       </Typography>
-      <Typography variant="body1">{subtitle}</Typography>
+      <Typography variant="body1">{capitalizeFirstLetter(subtitle)}</Typography>
     </Card>
   );
 }

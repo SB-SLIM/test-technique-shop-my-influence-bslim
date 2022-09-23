@@ -7,10 +7,11 @@ function InsightCard({ data }) {
     <Card className="py-3 px-2 h-[100%] ">
       <CardContent className="min-w-fit">
         <Grid container spacing={3}>
-          {data.map((item) => {
+          {data.map((item, i) => {
             const { title, subtitle, icon } = item;
             return (
               <Grid
+                key={i}
                 item
                 xs={12}
                 md={6}

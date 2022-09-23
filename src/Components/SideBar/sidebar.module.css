@@ -1,9 +1,15 @@
 .sidebarRoot {
-  @apply flex flex-col fixed top-0 left-0 bottom-0;
-  @apply bg-white px-3 py-6;
+  @apply flex flex-col fixed top-0 left-0 bottom-0 shadow-xl;
+  @apply bg-white px-3 py-6 w-[110px];
+  transition: width 1s ease-out;
 }
 .sidebarLogo{
-  
+  @apply flex justify-center items-center;
+}
+
+.sidebarOpen{
+  @apply w-[300px];
+  transition: width 1s ease-in;
 }
 
 nav {

@@ -1,0 +1,39 @@
+@use '../../../../scss/abstracts/' as *;
+
+.nav-item {
+  padding: 1rem 2rem;
+  border-left: .625rem solid transparent;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.4rem;
+
+  @apply hover:border-l-blue-300;
+}
+.nav-link {
+  text-transform: capitalize;
+}
+
+
+.MuiListItem-root.active .MuiListItemIcon-root{
+  @apply bg-primary text-white shadow-md rounded-md ;
+}
+
+.listItemTest{
+  @apply ml-3;
+  animation: labelAnim 1s ;
+}
+
+@keyframes labelAnim {
+  from{
+    opacity: 0;
+  }
+    
+
+  to{
+    opacity: 1;
+  }
+}
+
+.MuiListItemIcon-root{
+  
+}
