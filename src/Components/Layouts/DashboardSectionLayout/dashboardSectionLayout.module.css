@@ -1,0 +1,9 @@
+.dashSectionRoot{
+@apply mt-12;
+}
+
+.dashSectionHeader{}
+
+.dashSectionBody{
+    @apply py-4;
+}

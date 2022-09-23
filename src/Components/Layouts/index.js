@@ -1,3 +1,4 @@
 import SharedLayout from "./SharedLayout";
+import DashboardSectionLayout from "./DashboardSectionLayout";
 
-export default SharedLayout;
+export { SharedLayout, DashboardSectionLayout };

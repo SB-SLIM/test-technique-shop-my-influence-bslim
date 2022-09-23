@@ -26,6 +26,8 @@ export const getDesignTokens = (mode) => ({
     },
     background: {
       default: "#f8f8f8",
+      bgInstagram: "#f5adae",
+      bgWomen: "#ffe1e1",
     },
   },
   components: {
@@ -44,6 +46,16 @@ export const getDesignTokens = (mode) => ({
         root: {
           fontSize: "1rem",
           textTransform: "none",
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          borderRadius: ".5rem",
+          backgroundColor: "#fff",
+          boxShadow: "0px 2px 29px -6px rgba(0,0,0,0.34)",
+          overFlow: "hidden",
         },
       },
     },

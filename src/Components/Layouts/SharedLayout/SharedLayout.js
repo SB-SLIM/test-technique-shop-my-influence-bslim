@@ -1,4 +1,4 @@
-import { Box, Container, Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import SideBar from "Components/SideBar";
 import { Outlet } from "react-router";
 

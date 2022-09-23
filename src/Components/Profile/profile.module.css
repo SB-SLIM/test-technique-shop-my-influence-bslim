@@ -1,0 +1,11 @@
+.profileRoot{
+    @apply inline-flex  gap-4;
+}
+
+.profileLeft{
+        @apply text-right;
+    }
+    
+.profileRight{
+        
+    }

@@ -6,19 +6,19 @@ function Title({ type, children }) {
   switch (type) {
     case "title1":
       return (
-        <Typography variant="h3" color="primary">
+        <Typography variant="h4" color="primary">
           {capitalizeFirstLetter(children)}
         </Typography>
       );
     case "title2":
       return (
-        <Typography variant="h4" color="primary">
+        <Typography variant="h5" color="primary">
           {capitalizeFirstLetter(children)}
         </Typography>
       );
     default:
       return (
-        <Typography variant="h3" color="primary">
+        <Typography variant="h4" color="primary">
           {capitalizeFirstLetter(children)}
         </Typography>
       );

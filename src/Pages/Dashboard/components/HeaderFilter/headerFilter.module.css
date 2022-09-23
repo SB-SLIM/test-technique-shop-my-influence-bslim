@@ -1,0 +1,20 @@
+.headerFilterRoot{
+    @apply flex flex-col gap-3 mt-8;
+    @apply lg:flex-row lg:justify-between lg:items-end ;
+}
+
+.headerFilterRight{
+    @apply min-w-max; 
+    @apply flex justify-between items-end gap-6;
+}
+
+
+.headerFilterRight .headerActionLeft{
+    @apply flex flex-col justify-between gap-3 ;
+    @apply md:flex-row;
+}
+
+.headerFilterRight .headerActionRight{
+    @apply flex flex-col justify-between items-end gap-3;
+}
+

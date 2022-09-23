@@ -4,23 +4,16 @@ import clsx from "clsx";
 import React from "react";
 import { iconList } from "./iconsSourceData";
 import style from "./icon.module.css";
+import useColors from "hooks/useColors";
 
 function Icon({
   size = "small",
   color = "default",
   type = "default",
   variant,
+  props,
 }) {
-  const theme = useTheme();
-  const listColors = {
-    default: theme.palette.text.primary.main,
-    primary: theme.palette.primary.main,
-    secondary: theme.palette.secondary.main,
-    secondaryDark: theme.palette.secondary.dark,
-    casablanca: theme.palette.casablanca.main,
-    casablancaLight: theme.palette.casablanca.light,
-    blueRibbon: theme.palette.blueRibbon.main,
-  };
+  const listColors = useColors();
 
   const bgColor =
     type !== "default" && color ? `${listColors[color]}3F` : "transparent";
@@ -36,6 +29,7 @@ function Icon({
         size === "large" && type !== "default" && "p-6"
       )}
       style={{ backgroundColor: bgColor }}
+      {...props}
     >
       <MUIIcon
         fontSize={size}

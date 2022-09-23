@@ -1,16 +1,11 @@
-.sidebar {
+.sidebarRoot {
   @apply flex flex-col fixed top-0 left-0 bottom-0;
-  @apply bg-white;
+  @apply bg-white px-3 py-6;
+}
+.sidebarLogo{
+  
 }
 
-.sidebar-share {
-  @apply p-4;
-}
-
-.sidebar-user {
-  --gap: 2rem;
-  @apply p-6 justify-start items-center;
-}
 nav {
   flex: 1;
 }
