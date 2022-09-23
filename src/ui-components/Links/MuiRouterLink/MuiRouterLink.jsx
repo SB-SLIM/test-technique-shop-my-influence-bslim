@@ -2,6 +2,7 @@ import React from "react";
 import { Link as MUILink } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { useTheme } from "@emotion/react";
+import { capitalizeFirstLetter } from "utils/capitalizeFirstLetter";
 
 function MuiRouterLink({ children, to, ...props }) {
   const theme = useTheme();
@@ -14,7 +15,7 @@ function MuiRouterLink({ children, to, ...props }) {
       to={to}
       {...props}
     >
-      {children}
+      {capitalizeFirstLetter(children)}
     </MUILink>
   );
 }

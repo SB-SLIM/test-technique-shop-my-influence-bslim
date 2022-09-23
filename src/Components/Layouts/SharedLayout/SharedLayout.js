@@ -10,7 +10,7 @@ function SharedLayout() {
       <Grid item xs={2}>
         <SideBar />
       </Grid>
-      <Grid item xs={8} container direction="column" className="py-6">
+      <Grid item xs={12} md={8} container direction="column" className="py-6">
         <Container component="main" maxWidth="lg">
           <Outlet />
         </Container>

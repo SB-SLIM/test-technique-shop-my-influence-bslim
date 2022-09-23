@@ -1,6 +1,6 @@
 import useStaticImages from "hooks/useStaticImages";
 import React from "react";
-import { Avatar } from "ui-components";
+import { Avatar, Icon } from "ui-components";
 import style from "./sidebar.module.css";
 import { itemsInit } from "./navLinkSource";
 import Nav from "./components";
@@ -12,6 +12,7 @@ import {
   selectSideBar,
   setSideBarOpen,
 } from "Redux/ElementsState/sideBar.slice";
+import { IconButton } from "@mui/material";
 
 function SideBar() {
   const dispatch = useDispatch();
@@ -31,6 +32,18 @@ function SideBar() {
       <div className={style.sidebarNav}>
         <Nav items={itemsInit} isOpen={isOpen} />
       </div>
+      <IconButton
+        sx={{ boxShadow: 4 }}
+        className={style.btnSideBar}
+        bgcolor="white"
+        onClick={(e) => dispatch(setSideBarOpen())}
+      >
+        {!isOpen ? (
+          <Icon variant="arrowLeft" type="square" size="small" />
+        ) : (
+          <Icon variant="arrowRight" type="square" size="small" />
+        )}
+      </IconButton>
     </div>
   );
 }

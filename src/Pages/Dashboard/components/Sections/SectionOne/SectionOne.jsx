@@ -1,5 +1,6 @@
 import { Grid } from "@mui/material";
 import { StatCard } from "Components";
+import { ChartCard } from "Components/Cards/ChartCards";
 
 import { DashboardSectionLayout } from "Components/Layouts";
 
@@ -26,7 +27,6 @@ function SectionOne() {
               />
             </Grid>
             <Grid item xs={12} md={4}>
-              {" "}
               <StatCard
                 iconVariant="cart"
                 color="casablancaLight"
@@ -34,7 +34,6 @@ function SectionOne() {
               />
             </Grid>
             <Grid item xs={12} md={4}>
-              {" "}
               <StatCard
                 iconVariant="share"
                 color="casablanca"
@@ -50,7 +49,9 @@ function SectionOne() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={12} md={4}></Grid>
+        <Grid item xs={12} md={4}>
+          <ChartCard />
+        </Grid>
       </Grid>
     </DashboardSectionLayout>
   );

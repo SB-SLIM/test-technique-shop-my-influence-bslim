@@ -16,6 +16,12 @@ function Title({ type, children }) {
           {capitalizeFirstLetter(children)}
         </Typography>
       );
+    case "title3":
+      return (
+        <Typography variant="h6" color="text.primary" sx={{ fontWeight: 600 }}>
+          {capitalizeFirstLetter(children)}
+        </Typography>
+      );
     default:
       return (
         <Typography variant="h4" color="primary">

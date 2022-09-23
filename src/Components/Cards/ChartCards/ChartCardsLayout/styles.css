@@ -1,0 +1,7 @@
+.MuiCardHeader-action{
+    @apply m-0;
+}
+
+.MuiCardHeader-action .MuiCardHeader-title :first-child{
+    font-size: 1.25rem !important;
+}

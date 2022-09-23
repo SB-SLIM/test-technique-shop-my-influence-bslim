@@ -17,6 +17,8 @@ import {
   FiDatabase,
   FiUsers,
   FiArchive,
+  FiChevronRight,
+  FiChevronLeft,
 } from "react-icons/fi";
 
 export const iconList = {
@@ -38,4 +40,6 @@ export const iconList = {
   database: <FiDatabase />,
   users: <FiUsers />,
   archive: <FiArchive />,
+  arrowRight: <FiChevronRight />,
+  arrowLeft: <FiChevronLeft />,
 };
